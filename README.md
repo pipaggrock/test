@@ -31,15 +31,15 @@ Para explicar el fenómeno de preferencia y recambio de automóviles en Chile ve
 # Paso a paso
   1. obtener el porcentaje de aumento o caída en ventas en referencia al año anterior.
 
-|AÑO    |ventas| diff_perc
-|2010	  |108250|	     0
-|2011	  |136796|   20.87
-|2012	  |133456|	  -2.5
-|2013	  |144099|    7.39
-|2014	  |133435|   -7.99
-|2015	  |103970|  -28.34
-|2016	  |94836 |   -9.63
-|2017	  |110632|   14.28
-|2018	  |41495 | -166.62
+|AÑO    |ventas| diff_perc|
+|2010	  |108250|	     0  |
+|2011	  |136796|   20.87  |
+|2012	  |133456|	  -2.5  |
+|2013	  |144099|    7.39  |
+|2014	  |133435|   -7.99  |
+|2015	  |103970|  -28.34  |
+|2016	  |94836 |   -9.63  |
+|2017	  |110632|   14.28  |
+|2018	  |41495 | -166.62  |
 
 # Complementar
