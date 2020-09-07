@@ -23,7 +23,7 @@ responderemos el fenómeno en cuestión.
 
 En primera instancia requerimos cargar la data en google cloud storage, de manera de almacenarla y generar la instancia de levantarla como un dataset (ver 2_load_to_bigquery.sh)
 
-Finalmente para ayudar a entender el fenómeno en cuestión, realizaremos un conjunto de agregaciones sobre el dataset el cual nos ayudará a extender nuestra fuente de datos para la toma de decisiones y explicacr la tendencias (ver 3_querys.sql)
+Finalmente para ayudar a entender el fenómeno en cuestión, realizaremos un conjunto de agregaciones sobre el dataset el cual nos ayudará a extender nuestra fuente de datos para la toma de decisiones y explicar la tendencias (ver 3_querys.sql)
 
 # Explicación
 Para explicar el fenómeno de preferencia y recambio de automóviles en Chile veremos la variación en ventas por año y en base a estos cambios, veremos como ha sido la participación de las ventas por año por marca y se mostrarán las marcas que han ido en tendencia incremental durante los años y por otro lado las marcas que han ido en caída.
@@ -32,8 +32,8 @@ Para explicar el fenómeno de preferencia y recambio de automóviles en Chile ve
   1. obtener el porcentaje de aumento o caída en ventas en referencia al año anterior.
 
 | AÑO         | Q_VENTAS      |      DIFF_PERC |
-|-------------|---------------|---------------:|
-|     2010    |     108250    |           0    |
+|-------------|---------------|----------------|
+|     2010    |     108250    |        0.00    |
 |     2011    |     136796    |       20.87    |
 |     2012    |     133456    |        -2.5    |
 |     2013    |     144099    |        7.39    |
@@ -49,7 +49,7 @@ Este ejercicio se repetirá, pero lo haremos por cada marca
 
 | AGNO | MARCA   | total | diff_perc |
 |------|---------|-------|-----------|
-| 2010 | HYUNDAI | 17722 |           |
+| 2010 | HYUNDAI | 17722 |    0.00   |
 | 2011 | HYUNDAI | 18709 |    5.28   |
 | 2012 | HYUNDAI | 17962 |   -4.16   |
 | 2013 | HYUNDAI | 15473 |  -16.09   |
@@ -107,7 +107,7 @@ Por otro lado, CHRYSLER ha caído en sus ventas 5 años consecutivos, y el últi
 3. La marca DODGE ha sido la que ha perdido posicionamiento 6 años consecutivos, liderando el ranking.
 4. CHRYSLER es la única marca que cambio su pendiente de manera positiva cortando los 5 años consecutivos de caídas en sus ventas anuales.
 
-* # Complementar
+# Complementar
 Para este análisis se realizó de manera general, la data enriquecida acompaña a reforzar los análsis tales como:
 * evaluar el fenómeno por zonas (NORTE, CENTRO, SUR y metropolitana)
 * complementar el fenómenos utilizando otros flags, como estudiar un horizonte distinto al año, como bien podría ser la edad.
